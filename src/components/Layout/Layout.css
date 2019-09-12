@@ -1,0 +1,60 @@
+.layout {
+    display: flex;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .layout {
+        flex-direction: column;
+    }
+}
+
+
+.layout__main {
+    background: #E9EBEE;
+    flex: 1;
+
+}
+
+.layout__activity {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+    .layout__activity {
+        flex-direction: column;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+
+.hamburger {
+    position: absolute;
+    display: none;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+}
+
+.hamburger .line{
+    width: 30px;
+    height: 4px;
+    background-color: rgb(117, 117, 117);
+    display: block;
+    margin: 6px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }

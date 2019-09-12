@@ -1,0 +1,24 @@
+.recipients {
+    padding-top: 48px;
+    max-width: 370px;
+}
+
+.recipients__header {
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    font-size: 15px;
+    line-height: 18px;
+    color: #9191AF;
+    text-align: left;
+}
+
+.recipients__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.recipients__list div {
+    margin-right: 16px;
+    margin-bottom: 16px;
+}

@@ -1,0 +1,18 @@
+.avatar {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 14px;
+    background-color: transparent;
+    transition:all 0.3s ease;
+}
+
+.avatar__background {
+    position: absolute;
+    top: 0px;
+    left: -4px;
+}
+
+.avatar:hover {
+    box-shadow: 0 9px 14px -10px rgba(0,0,0,0.50);
+}

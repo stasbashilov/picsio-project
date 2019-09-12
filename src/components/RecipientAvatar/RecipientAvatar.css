@@ -1,0 +1,19 @@
+.recipient-avatar {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    border-radius: 18px;
+    background-color: transparent;
+    transition:all 0.3s ease;
+}
+
+.recipient-avatar:hover {
+    box-shadow: 0 9px 14px -10px rgba(0,0,0,0.50);
+
+}
+
+.recipient-avatar svg {
+    position: absolute;
+    top: 0;
+    left: -4px;
+}

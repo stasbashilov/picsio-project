@@ -1,0 +1,37 @@
+.card-placeholder {
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box;
+    position: relative;
+    width: 370px;
+    border: 1px solid transparent;
+    border-radius: 16px;
+    background: #192B4B;
+}
+
+.card-placeholder img{
+    display: block;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .card-placeholder {
+        width: 280px;
+    }
+}
+
+
+
+.card-placeholder__title {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    z-index: 2;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: left;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.50);
+}

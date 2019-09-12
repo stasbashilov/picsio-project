@@ -1,0 +1,78 @@
+.card {
+    width: 312px;
+    min-height: 158px;
+    border: 1px solid white;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 16px;
+    font-family: Helvetica;
+    color: #9191AF;
+    transition:all 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 9px 14px -10px rgba(0,0,0,0.50);
+}
+
+.card__header {
+    position: relative;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-left: 24px;
+    margin-bottom: 16px;
+}
+
+.card__header::after {
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #9191AF;
+    top: 16px;
+    right: 16px;
+    filter: drop-shadow(.5em 0px 0px #9191AF) 
+            drop-shadow(-.5em 0px 0px #9191AF);
+}
+
+.card__data {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 16px;
+    padding-left: 24px;
+}
+
+.card__balance {
+    display: flex;
+    align-items: flex-start;
+}
+
+.card__sum {
+    padding-right: 12px;
+    font-size: 30px;
+    color: #212145;
+}
+
+.card__currency {
+    padding-top: 5px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #9191AF;
+}
+
+.card__percent {
+    text-align: right;
+    font-size: 14px;
+    color: #0FB269;
+}
+
+.card__date {
+    font-size: 12px;
+    color: #9191AF;
+    text-align: right;
+}
+
+.card__diagram {
+    width: 100%;
+}
