@@ -9,7 +9,6 @@ class ActivityList extends React.Component {
         activities: []
     }
 
-    // вызовется один раз после монтирования копонента
     componentDidMount() {
         this.setState({ activities: data })
     }
@@ -18,7 +17,6 @@ class ActivityList extends React.Component {
         fetch("http://www.mocky.io/v2/5d7947af320000181134e977").then(res => {
             return res.json()
         }).then(result => {
-            // каждый раз когда вызывается сетстейт происходит повторный рендер компонента
             this.setState({ activities: [...this.state.activities, ...result] })
         }).catch(err => console.log(err))
     }
