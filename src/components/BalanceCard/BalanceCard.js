@@ -10,7 +10,7 @@ class Chart extends PureComponent {
       return (
         <AreaChart
           width={312}
-          height={100}
+          height={67}
           data={this.props.diagram}
           margin={{
             top: 10, right: 0, left: 0, bottom: 0,

@@ -32,7 +32,14 @@ export const data = [
        "price":"145",
        "name":"Rc146 Rompetrol Sibi",
        "complited": false
-    }
+    },
+    {  
+      "date":"12.09.2019",
+      "type":"money",
+      "price":"145",
+      "name":"Rc146 Rompetrol Sibi",
+      "complited": false
+   }
  ];
 
  export const images = [

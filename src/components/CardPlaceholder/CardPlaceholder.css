@@ -15,13 +15,20 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 320px) {
     .card-placeholder {
         width: 280px;
+        margin: 0 auto;
     }
 }
 
-
+@media (min-width: 375px) and (max-width: 1024px) {
+    .card-placeholder  {
+       width: 310px;
+       align-self: flex-start;
+       margin: 0 auto;
+    }
+}
 
 .card-placeholder__title {
     position: absolute;

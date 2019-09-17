@@ -1,4 +1,5 @@
 .activity-list {
+    box-sizing: border-box;
     max-width: 620px;
     flex: 1 0 620px;
     padding: 24px;
@@ -8,14 +9,13 @@
     border: 1px solid white;
     background: white;
     border-radius: 16px;
-    max-height: 350px;
     overflow: auto
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .activity-list {
         max-width: 100%;
-        margin-top: 24px;
+        width: 100%;
         flex: 1 0 auto;
     }
 }
