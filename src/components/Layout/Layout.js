@@ -36,7 +36,7 @@ class Layout extends React.Component {
                 <Topbar />
                 <CardList />
                 <div className='layout__activity'>
-                    <div>
+                    <div className='layout__wrapper'>
                         <CardPlaceholder />
                         <RecipientList />
                     </div>

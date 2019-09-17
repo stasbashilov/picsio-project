@@ -1,6 +1,8 @@
 .card {
     width: 312px;
-    min-height: 158px;
+    max-width: 312px;
+    flex: none;
+    height: 160px;
     border: 1px solid white;
     background: white;
     box-sizing: border-box;
@@ -9,6 +11,13 @@
     color: #9191AF;
     transition:all 0.3s ease;
     overflow: hidden;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 320px) {
+    .card {
+        width: 280px;
+    }
 }
 
 .card:hover {
@@ -16,11 +25,12 @@
 }
 
 .card__header {
+    font-size: 14px;
     position: relative;
     padding-top: 24px;
     padding-right: 24px;
     padding-left: 24px;
-    margin-bottom: 16px;
+    padding-bottom: 16px;
 }
 
 .card__header::after {

@@ -1,6 +1,21 @@
 .recipients {
-    padding-top: 48px;
+    padding-top: 50px;
     max-width: 370px;
+    margin-left: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .recipients {
+        padding-top: 0px;
+        flex: 1 0 auto;
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .recipients {
+        margin-bottom: 50px;
+    }
 }
 
 .recipients__header {
@@ -12,6 +27,15 @@
     text-align: left;
 }
 
+.recipients__more {
+    display: block;
+    padding: 17px 16px;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgb(147, 143, 175);
+    align-self: flex-start;
+}
+
 .recipients__list {
     display: flex;
     justify-content: flex-start;
@@ -19,6 +43,39 @@
 }
 
 .recipients__list div {
-    margin-right: 16px;
+    flex: 0 1 auto;
+    margin-left: 16px;
     margin-bottom: 16px;
+}
+
+.recipients__list div:first-child {
+    margin-left: 0;
+}
+
+.recipients__list div:nth-child(7n+7) {
+    margin-left: 0;
+}
+
+@media (max-width: 320px) {
+    .recipients__list div:nth-child(5n+5) {
+        margin-left: 0;
+    }
+
+    .recipients__list div:nth-child(9) {
+        margin-left: 0;
+    }
+
+    .recipients__list div:nth-child(7n+7) {
+        margin-left: 16px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 375px) {
+    .recipients__list div:nth-child(6n+6) {
+        margin-left: 0;
+    }
+
+    .recipients__list div:nth-child(7n+7) {
+        margin-left: 16px;
+    }
 }

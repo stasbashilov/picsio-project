@@ -14,6 +14,7 @@ const RecipientList = () => (
             {data.map((userData, index) => {
                 return <RecipientAvatar key={index} userData={userData} />
             })}
+            <span className='recipients__more'>+12 more</span>
         </div>
     </div>
 )

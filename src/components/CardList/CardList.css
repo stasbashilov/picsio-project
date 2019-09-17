@@ -1,13 +1,22 @@
 .card-list__header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 24px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 321px) and (max-width: 425px) {
     .card-list__header {
+        max-width: 310px;
+    }
+}
+
+@media (max-width: 425px) {
+    .card-list__header {
+        margin-right: auto;
+        margin-left: auto;
         padding-right: 20px;
         padding-left: 20px;
     }
@@ -15,6 +24,7 @@
 
 .card-list__title {
     font-size: 15px;
+    line-height: 18px;
     color: #9191AF;
     text-align: left;
     text-transform: uppercase;
@@ -26,25 +36,17 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 48px;
 }
 
 /* responsive breakpoints for card-list__items */
 
-@media (max-width: 768px) {
+@media (max-width: 425px) {
     .card-list__items {
         flex-direction: column;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         padding-right: 20px;
         padding-left: 20px;
-        margin-bottom: 24px;
     }
 }
 
-@media (max-width: 768px) {
-    .card {
-        width: 100%;
-        align-self: flex-start;
-        margin-bottom: 24px;
-    }
-}
