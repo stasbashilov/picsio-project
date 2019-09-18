@@ -1,22 +1,22 @@
 import React from 'react';
 
 import Avatar from '../Avatar';
-import Button from '../Button';
+import Button, {AddButton} from '../Button';
+
 import NotificationButton from '../NotificationButton';
 
 import './Topbar.css';
 
-const Topbar = () => (
+const Topbar = (props) => (
     <div className='topbar'>
         <div className='topbar__title'>Overview</div>
         <div className='topbar__buttons'>
-            <Button />
+            <AddButton onItemAdd={props.onItemAdd}/>
             <Button search={true} />
             <NotificationButton />
             <Avatar />
         </div>
     </div>
 );
-
 
 export default Topbar;

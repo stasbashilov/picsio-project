@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     background: #DCE1EE;
-    height: 100vh;
 }
 
 @media (max-width: 1024px) {
@@ -27,6 +26,7 @@
     cursor: pointer;
     transition:all 0.3s ease;
     color: #565682;
+    text-overflow: ellipsis;
 }
 
 @media (max-width: 768px) {
@@ -58,6 +58,10 @@
     padding-left: 20px;
     font-size: 15px;
     line-height: 18px;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* hovered sidebar__item example*/
