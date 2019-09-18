@@ -20,6 +20,12 @@
     }
 }
 
+@media (min-width: 736px) and (max-width: 1024px) {
+    .card {
+        margin-bottom: 40px;
+    }
+}
+
 .card:hover {
     box-shadow: 0 9px 14px -10px rgba(0,0,0,0.50);
 }

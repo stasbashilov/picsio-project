@@ -3,9 +3,10 @@
     display: flex;
     flex-direction: column;
     background: #DCE1EE;
+    height: 100vh;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .sidebar {
         display: none;
         width: 100%;
