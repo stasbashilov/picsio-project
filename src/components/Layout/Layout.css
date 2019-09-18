@@ -13,7 +13,6 @@
 
 .layout__main {
     flex: 1;
-    height: 100vh;
 }
 
 .layout__activity {
@@ -45,11 +44,6 @@
         margin-bottom: 50px;
     }
 }
-
-.layout__wrapper {
-
-}
-
 
 .hamburger {
     position: absolute;

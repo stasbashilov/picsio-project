@@ -1,6 +1,5 @@
 import React from 'react';
 
-import menuItems from './menuItems';
 
 import './Sidebar.css';
 
@@ -14,7 +13,7 @@ const Sidebar = (props) => (
             </div>
         </div>
         <div className='sidebar__list'>
-            {menuItems.map((item, index) => {
+            {props.items.map((item, index) => {
                 return <div key={index} className={`sidebar__item ${index===0 ? 'active' : ''}`}>
                     <div className={item.classname}>{item.icon()}</div>
                     <div>{item.name}</div>
