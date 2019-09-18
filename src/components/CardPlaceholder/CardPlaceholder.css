@@ -1,5 +1,6 @@
 .card-placeholder {
     display: flex;
+    align-self: flex-start;
     align-items: flex-end;
     box-sizing: border-box;
     position: relative;
@@ -22,11 +23,18 @@
     }
 }
 
-@media (min-width: 375px) and (max-width: 1024px) {
+@media (min-width: 375px) and (max-width: 567px) {
     .card-placeholder  {
        width: 310px;
        align-self: flex-start;
        margin: 0 auto;
+    }
+}
+
+@media (min-width: 568px) and (max-width: 700px) {
+    .card-placeholder  {
+       width: 310px;
+       align-self: flex-start;
     }
 }
 
