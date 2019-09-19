@@ -29,11 +29,18 @@
 }
 
 .card-list__title {
+    display: block;
     font-size: 15px;
     line-height: 18px;
     color: #9191AF;
     text-align: left;
     text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .card-list__title {
+        display: none;
+    }
 }
 
 .card-list__items {
