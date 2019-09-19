@@ -1,6 +1,7 @@
 /* overwrites default datepicker styles */
-.react-datepicker__input-container input {
-    width: 166px;
+.react-datepicker__input-container {
+    display: flex;
+    align-items: center;
     height: 36px;
     box-sizing: border-box;
     padding-top: 10px;
@@ -11,8 +12,44 @@
     border-radius: 12px;
     outline: none;
     font-size: 15px;
-    color: #212145;
+    color: #565682;
     text-align: left;
+    background: #fff
+}
+
+.container {
+    position: relative;
+}
+
+.datepicker {
+    position: absolute;
+    z-index: 100;
+    left: -100px;
+    top: 40px;
+    /* border: 1px solid #ccc !important; */
+    border-radius: 16px;
+    box-shadow: 0 9px 14px -10px rgba(0,0,0,0.50);
+}
+
+@media (max-width: 375px) {
+    .datepicker {
+        left: -22px;
+    }
+}
+
+@media (min-width: 377px) and (max-width: 700px){
+    .datepicker {
+        left: -42px;
+    }
+}
+
+.rdrCalendarWrapper.rdrDateRangeWrapper {
+   border-radius: 16px;
+}
+
+.rdrDateDisplay, .rdrDateDisplayWrapper {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
 }
 
 .react-datepicker__input-container::before {
@@ -29,7 +66,7 @@
     background-position: center center; 
 } 
 
-.react-datepicker__input-container::after {
+.datepicker_close {
     content: "";
     position: absolute; 
     width: 11px;
@@ -41,14 +78,10 @@
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIxMXB4IiBoZWlnaHQ9IjVweCIgdmlld0JveD0iMCAwIDExIDUiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+ICAgICAgICA8dGl0bGU+UGF0aDwvdGl0bGU+ICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPiAgICA8ZyBpZD0iRGFzaGJvYXJkIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPiAgICAgICAgPGcgaWQ9IndhbGxldC5vbi1GaW5hbmNlLUFwcCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEzMTYuMDAwMDAwLCAtNDYuMDAwMDAwKSIgc3Ryb2tlPSIjMjEyMTQ1Ij4gICAgICAgICAgICA8ZyBpZD0id2FsbGV0Lm9uLS0tb3ZlcnZpZXciPiAgICAgICAgICAgICAgICA8ZyBpZD0iaGVhZGVyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyODguMDAwMDAwLCAyNi4wMDAwMDApIj4gICAgICAgICAgICAgICAgICAgIDxnIGlkPSJyaWdodC1hY3Rpb25zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3OTkuMDAwMDAwLCAwLjAwMDAwMCkiPiAgICAgICAgICAgICAgICAgICAgICAgIDxwb2x5bGluZSBpZD0iUGF0aCIgcG9pbnRzPSIyMzAgMjAuNSAyMzQuNSAyNSAyMzkgMjAuNSI+PC9wb2x5bGluZT4gICAgICAgICAgICAgICAgICAgIDwvZz4gICAgICAgICAgICAgICAgPC9nPiAgICAgICAgICAgIDwvZz4gICAgICAgIDwvZz4gICAgPC9nPjwvc3ZnPg==);
     background-position: center center;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
-.react-datepicker-popper {
-    left: -30px !important;
-}
-
-@media (max-width: 768px){
-    .react-datepicker-popper {
-        left: -60px !important;
-    }
+.datepicker_close--rotate {
+    transform: rotate(180deg); 
+    top: 40%;
 }
