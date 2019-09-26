@@ -14,7 +14,7 @@ class ActivityList extends React.Component {
     }
 
     handleGetItems = () => {
-        fetch("http://www.mocky.io/v2/5d7947af320000181134e977").then(res => {
+        fetch("https://www.mocky.io/v2/5d7947af320000181134e977").then(res => {
             return res.json()
         }).then(result => {
             this.setState({ activities: [...this.state.activities, ...result] })
