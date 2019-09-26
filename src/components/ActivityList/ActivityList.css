@@ -1,8 +1,7 @@
 .activity-list {
     box-sizing: border-box;
     max-width: 620px;
-    max-height: 435px;
-    overflow: scroll;
+    max-height: 431px;
     flex: 1 0 620px;
     padding: 24px;
     padding-top: 0;
@@ -19,6 +18,11 @@
         width: 100%;
         flex: 1 0 auto;
     }
+}
+
+.activity-list__body {
+    max-height: 320px;
+    overflow: scroll;
 }
 
 .activity-list__header {
