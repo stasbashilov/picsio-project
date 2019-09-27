@@ -12,11 +12,11 @@
     }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .recipients {
         margin-bottom: 50px;
     }
-}
+} */
 
 .recipients__header {
     text-transform: uppercase;
