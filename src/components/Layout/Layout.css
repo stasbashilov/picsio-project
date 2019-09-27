@@ -32,7 +32,7 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1260px) {
     .layout__activity {
         flex-direction: column;
     }
@@ -41,7 +41,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     .layout__wrapper {
         display: flex;
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
     }
 }
 
